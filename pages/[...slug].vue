@@ -24,7 +24,7 @@ const { data, pending, error, refresh } = await useFetch('http://devfoliox.local
 <template>
     <main>
         <PrimaryMenu/>
-        <Content :content="data[0].content.rendered"/>
+        <Content :content="data[0].content.rendered" :activePage="slug"/>
         <!-- <h1>{{ data[0].title.rendered }}</h1>
         <div v-html="data[0].content.rendered"></div>-->
         <!-- {{data}} -->
